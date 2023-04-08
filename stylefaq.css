@@ -1,0 +1,125 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+img {
+        max-width:200px;
+        max-height:200px;
+        width: auto;
+        height: auto;
+        left: 10%;
+        display: inline-block;
+}
+
+.titulo h1 {
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+}
+
+.titulo h2 {
+    text-align: center;
+    margin: auto;
+}
+
+.texto  {
+    font-size: large;
+    text-align: center;
+    margin-left: 0%;
+    margin-top: 20px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    border: 5px solid brown;
+}
+    
+#quem-somos {
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+        
+#quem-somos img {
+    max-width: 100%;
+    height: auto;
+    float: left;
+    padding: 15px;
+}
+        
+.quem-somos-texto {
+    overflow: hidden; 
+}
+        
+#quem-somos h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+        
+    #quem-somos p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+        
+        
+
+    .btn {
+    display: inline-block;
+    margin-bottom: 40px;
+    margin-top: 80px;
+    border: 2px solid brown;
+    color: black;
+    padding: 18px 40px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: .2s linear;
+    text-align: center;
+}
+    
+.btn:hover{
+    background-color: brown;
+    color: #ffffff;
+        
+}
+
+.btn.hover, .btn:hover {
+    color: white;
+}
+
+footer {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: brown;
+    color: #ffffff;
+    box-sizing: border-box;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    position: relative;
+    width: 100%;
+}

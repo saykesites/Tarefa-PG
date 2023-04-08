@@ -1,0 +1,156 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+img {
+        max-width:200px;
+        max-height:200px;
+        width: auto;
+        height: auto;
+        left: 10%;
+        display: inline-block;
+}
+.titulo h1 {
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+}
+.titulo h2 {
+    text-align: center;
+    margin: auto;
+}
+
+.texto  {
+    font-size: large;
+    text-align: center;
+    margin-left: 0%;
+    margin-top: 20px;
+}
+
+body {
+    background-color: white;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    
+}
+
+.tabela-preco {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: min(1600px, 100%);
+    margin: auto;
+
+}
+.card-preco {
+    flex: 1;
+    max-width: 300px;
+    background-color: white;
+    margin: 20px 10px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    color: #000000;
+    transition: .3s linear;
+}
+
+.card-preco:hover .card-preco-header {
+    box-shadow: 0 0 0 26em brown;
+
+}
+
+.card-preco-header {
+    background-color: brown;
+    display: inline-block;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 0 0 20px 20px;
+    font-size: 16;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 1s linear;
+}
+
+.preco {
+    font-size: 70px;
+    color: #000;
+    margin: 40px 0;
+    transition: .1s linear;    
+}
+
+.preco sup, .preco, span {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.card-preco:hover, .card-preco:hover .preco {
+    color: white;
+}
+
+.card-preco li {
+    font-size: 16px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.btn {
+    display: inline-block;
+    margin-bottom: 40px;
+    margin-top: 80px;
+    border: 2px solid brown;
+    color: black;
+    padding: 18px 40px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: .2s linear;
+}
+
+.btn:hover{
+    background-color: brown;
+    color: #ffffff;
+    
+}
+.btn.hover, .btn:hover {
+    color: white;
+}
+
+footer {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: brown;
+    color: #ffffff;
+    box-sizing: border-box;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    position: relative;
+    width: 100%;
+}
+
+@media screen and (max-width: 100px) {
+    .card-preco{
+        flex:50%;
+    }
+}
